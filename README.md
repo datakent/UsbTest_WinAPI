@@ -1,4 +1,12 @@
-Cihaz path bilgisi ile "Bulk Transfer" / raw data transferi
+**Rongta Termal yazıcı ya USB üzerinde Bulk Transfer / Raw Data Transferi**
+
+Testler **Rongta RPP320** termal yazıcı ile yapılmıştır. Yazıcının USB ve Bluetooth desteği bulunmaktadır.
+CMD Tipi **TSPL** modundadır zira hazırlanan veri bu dile göre hazırlanmaktadır.
+* Hazırlanan veri paketi Bluetooth üzerinden de gönderilebilir, çıktı aynı olacaktır.
+
+Üreticinin sürücüleri veya 3prt bir sürücü/kütüphane kullanılmadan direkt Windows API leri üzerinde veri gönderilecektir.
+
+**Cihaz path bilgisi ile "Bulk Transfer" / raw data transferi**
 
 Denemelerde kullanılan Path ve açıklaması:  **\\\\?\usb#vid_0fe6&pid_811e#6&4817b6d&0&2#{a5dcbf10-6530-11d2-901f-00c04fb951ed}**
 
