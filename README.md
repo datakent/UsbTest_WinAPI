@@ -29,4 +29,4 @@ https://learn.microsoft.com/en-us/windows-hardware/drivers/install/guid-devinter
 İlk kısım Nirsoft'un **USBDeview** yazılımı ile alınabilir.
 **USBDeview InstanceID** Örneği: USB\VID_0FE6&PID_811E\6&197fd1e3&0&2
 
-Bu veriyi devicePath'a aktarırken "\" kısmı "#" ile değiştirilmeli, diğer kısımlar aynen kalmalı!
+Bu veriyi devicePath'a aktarırken "**\\**" kısmı "**#**" ile değiştirilmeli, diğer kısımlar aynen kalmalı!
