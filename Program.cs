@@ -6,6 +6,9 @@ namespace UsbTest_WinAPI
     {
         static void Main()
         {
+            //USBDeview
+            string deviceInstanceID = @"USB\VID_0FE6&PID_811E\6&197fd1e3&0&2";
+            
             string fileName = "D:/TestBitmap.bmp";
 
             var p = new TSPLCmd();
@@ -22,7 +25,7 @@ namespace UsbTest_WinAPI
 
             p.save2Disk("D:/Output.hx");
 
-            string devicePath = @"\\?\USB#VID_0FE6&PID_811E#6&197fd1e3&0&2#{a5dcbf10-6530-11d2-901f-00c04fb951ed}";
+            string devicePath = @"\\?\" + deviceInstanceID.Replace("\\", "#") + "#{a5dcbf10-6530-11d2-901f-00c04fb951ed}";
 
             IntPtr deviceHandle = WinAPI.CreateFile(devicePath,
                 WinAPI.GENERIC_WRITE | WinAPI.GENERIC_READ, WinAPI.FILE_SHARE_WRITE,
